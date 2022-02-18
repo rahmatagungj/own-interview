@@ -1,4 +1,4 @@
-function isValidSubquence(array = [], sequence = []) {
+function isValidSubsequence(array = [], sequence = []) {
     let sequenceIndex = 0;
     let arrayIndex = 0;
     while (sequenceIndex < sequence.length && arrayIndex < array.length) {
@@ -10,4 +10,4 @@ function isValidSubquence(array = [], sequence = []) {
     return sequenceIndex === sequence.length;
 }
 
-exports.isValidSubquence = isValidSubquence
+exports.isValidSubsequence = isValidSubsequence
