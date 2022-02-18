@@ -1,5 +1,17 @@
-# Palindrome 
-A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam or racecar.
+# Palindrome Check 
+Write a function that takes in a non-empty string and that returns a boolean representing whether the string is a palindrome.
+
+A palindrome is defined as a string that's written the same forward and backward. Note that single-character strings are palindromes.
+
+### Input
+```js
+string = "abcdcba"
+```
+
+### Output
+```js
+true
+```
 
 ## Instructions
 1. You need to complete the function isPalindrome on `isPalindrome.js` file.
