@@ -1,6 +1,7 @@
-// solution 1
-function isPalindrome(str){
-  return str == str.split('').reverse().join('');
+function isPalindrome(text) {
+  // write your code here
+
 }
 
+// dont change the code below
 exports.isPalindrome = isPalindrome
