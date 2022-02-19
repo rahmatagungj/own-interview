@@ -1,3 +1,3 @@
-const { own } = require('../../own')
+const { own } = require('../../package/owntest')
 
 eval(own)
