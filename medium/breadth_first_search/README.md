@@ -23,6 +23,6 @@ graph = A
 ```
 
 ## Instructions
-1. You need to complete the function answer on `answer.js` file.
-2. put any description about how to solve the problem here.
+1. You need to complete the function breadthFirstSearch on `breadthFirstSearch.js` file.
+2. Function `breadthFirstSearch` takes one argument, `root`, which is the root node of the tree.
 3. Run the tests to see the results `node run`
