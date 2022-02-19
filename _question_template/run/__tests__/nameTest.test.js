@@ -1,4 +1,4 @@
-const { answer } = require('./_template/level/answer')
+const { answer } = require('../{level}/{question_name}/{question_file}')
 
 describe('Test Name', () => {
   it("Test Case #1", () => {
