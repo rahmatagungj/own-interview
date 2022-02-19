@@ -1,4 +1,4 @@
-const { answer } = require('./_template/answer')
+const { answer } = require('./_template/level/answer')
 
 describe('Test Name', () => {
   it("Test Case #1", () => {

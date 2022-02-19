@@ -1,4 +1,4 @@
-const { sortedSquaredArray } = require('../sorted_squared_array/sortedSquaredArray')
+const { sortedSquaredArray } = require('../easy/sorted_squared_array/sortedSquaredArray')
 
 describe('Sorted Squared Array', () => {
   it('sortedSquaredArray Function should be exist', () => {

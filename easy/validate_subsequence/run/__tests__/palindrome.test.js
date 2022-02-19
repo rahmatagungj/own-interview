@@ -1,4 +1,4 @@
-const { isValidSubsequence } = require('../validate_subsequence/isValidSubsequence')
+const { isValidSubsequence } = require('../easy/validate_subsequence/isValidSubsequence')
 
 describe('isValidSequence Check', () => {
   it("isValidSequence Function should be exist", () => {
