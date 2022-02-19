@@ -15,6 +15,6 @@ key = 2
 ```
 
 ## Instructions
-1. You need to complete the function answer on `answer.js` file.
+1. You need to complete the function caesarCipherEncryptor on `caesarCipherEncryptor.js` file.
 2. The function should return a new string obtained by shifting every letter in the input string by k positions in the alphabet, where k is the key.
 3. Run the tests to see the results `node run`
