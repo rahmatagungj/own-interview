@@ -1,6 +1,6 @@
 const { binarySearch } = require('../easy/binary_search/binarySearch')
 
-describe('Test Name', () => {
+describe('Binary Search', () => {
   it("binarySearch Function should be exist", () => {
     expect(binarySearch()).toExist()
   })
