@@ -101,10 +101,9 @@ const Receptionist = (person) => {
 }
 
 function airportPerson() {
-  // the task is move the person to the airport destination with plane
-  
-  // write your solution here
   let arrivedPerson = null
+  // the task is move the person to the airport destination with plane
+  // write your solution here
   
   return arrivedPerson
 }
