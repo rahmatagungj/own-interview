@@ -1,0 +1,1 @@
+const { airportPerson, Person, Plane, Flight, TicketOffice, Receptionist } = require('../../airportPerson')
