@@ -6,17 +6,17 @@ class komandanPaskibraka {
 
   findAndCountPerson(firstPerson, lastPerson) {
     const allMember = this.#convertToSingleArray(this.member)
-
     const firstPersonIndex = allMember.indexOf(firstPerson)
     const lastPersonIndex = allMember.indexOf(lastPerson)
+
     let allPersonFromFristToLast = []
     for (let i = firstPersonIndex + 1; i <= lastPersonIndex - 1; i++) {
       allPersonFromFristToLast.push(allMember[i])
     }
 
     return {
-      "totalPerson": allPersonFromFristToLast.length, 
-      "listOfPerson": allPersonFromFristToLast
+      totalPerson: allPersonFromFristToLast.length, 
+      listOfPerson: allPersonFromFristToLast
     }
   }
 
