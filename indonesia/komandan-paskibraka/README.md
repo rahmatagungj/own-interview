@@ -44,6 +44,7 @@ lastPerson = "Hendra"
     "Firman",
     "Gede",
   ] // nama orang yang berada antara orang pertama dan orang terakhir
+}
 ```
 
 ## Instructions
