@@ -15,4 +15,4 @@ You can publish questions by running the following command:
 ```bash
 bash publish.sh <directory> <solution (true for include the solution)>
 ```
-And you can see the published questions on `published` directory.
+And you can see the published questions on `_published` directory.

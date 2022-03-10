@@ -1,5 +1,5 @@
 #!/bin/bash
-PUBLISH_DIRECTORY="published"
+PUBLISH_DIRECTORY="_published"
 
 if [ ! "$1" ]; then
   echo "Usage: $0 <directory> <solution (true for include the solution)>"
@@ -33,23 +33,12 @@ sed -e "s/${1/\//"\/"}/../g" -i $PUBLISH_DIRECTORY/$1/run/__tests__/*.js
 cp -r package $PUBLISH_DIRECTORY/$1/run
 cp -r $1/run/index.js $PUBLISH_DIRECTORY/$1/run/index.js
 sed -e "s/..\/..\/..\//.\//g" -i $PUBLISH_DIRECTORY/$1/run/index.js
+cp -r _template/.github $PUBLISH_DIRECTORY/$1
 
 if [ "$2" ]; then
   echo "Adding solution for $1"
   mkdir -p $PUBLISH_DIRECTORY/$1/solution
   cp -r $1/solution/*.js $PUBLISH_DIRECTORY/$1/solution
 fi
-
-cd $PUBLISH_DIRECTORY/$1
-if [ "$2" ]; then
-  echo "Bundling $1 to ${1/\//"-"}-with-solution.zip"
-  zip -r ../../${1/\//"-"}-with-solution.zip ./* && cd ../../..
-else 
-  echo "Bundling $1 to ${1/\//"-"}.zip"
-  zip -r ../../${1/\//"-"}.zip ./* && cd ../../..
-fi
-
-echo "Cleaning up $PUBLISH_DIRECTORY/$1"
-rm -rf $PUBLISH_DIRECTORY/$(dirname "$1")
 
 echo "$1 successfully published to Standalone Questions Test"
